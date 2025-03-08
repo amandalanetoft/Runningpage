@@ -1,0 +1,90 @@
+#hero {
+    height: 800px;
+    background-image: url("running1.jpg");
+    background-position: center;
+    background-size: cover;
+    box-sizing: content-box;/*bidrar med synlighet av hela bilden*/
+}
+#hero-content {
+    width: 900px;
+    background-color: rgba(51, 47, 47, 0.8);/*rgba används för att göra transparent bakgrund*/
+    box-shadow: 2px 4px 8px rgb(68, 67, 67);
+    border-radius: 8px;
+    text-align: center;
+    padding: 50px 0;
+    margin: 0 auto;
+    position: relative; /*för att positonera element*/
+    top: 250px;
+}
+#hero-content h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+}
+#hero-content p {
+    color: white;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 32px;
+}
+#hero-content a {
+    text-decoration: none;
+    background-color: rgb(255, 251, 0);
+    padding: 12px 24px; /*första värdet är top-bottom andra värdet är left och right*/
+    color: black;
+    font-size: 24px;
+    font-weight: bold; /*kunde även skrivit 700 här för att få en fetare text*/
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px rgb(68, 67, 67);
+}
+#hero-content a:hover {
+    background-color: rgb(255, 238, 0);
+}
+#highlights {
+    padding: 22px;
+    background: linear-gradient(0deg, rgb(245, 243, 160), rgb(134, 134, 134));
+}
+#highlights h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(245, 243, 160);
+    margin: 24px 0;
+}
+#destinations {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+.destination {
+    margin: 0 20px;
+    text-transform: uppercase;
+}
+.destination p {
+    text-align: center;
+    font-size: 24px;
+    color:rgb(77, 77, 77);
+    margin: 20px 0; /*topbottom - legtright*/
+}
+.destination a {
+    color: rgb(77, 77, 77); 
+    text-decoration: none;
+}
+.destination a:hover {
+    color: rgb(245, 243, 160);
+}
+.destination img {
+    height: 200px;
+    width: 300px; /*videon säger att vi ska sätta ett värde av 100 % men jag lyckas inte centrera bilderna så*/
+    box-shadow: 2px 4px 8px rgb(68, 67, 67);
+    border-radius: 10px;
+    object-fit: cover;/*betyder att bilden blir resized för att passa dess ram*/
+}
+.destination strong {
+    color: rgb(0, 60, 117);
+}
